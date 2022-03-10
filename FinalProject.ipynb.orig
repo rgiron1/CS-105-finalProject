@@ -1994,7 +1994,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
+   "execution_count": 19,
    "id": "88dea03c-b338-4505-9719-758be153c199",
    "metadata": {},
    "outputs": [
@@ -2009,42 +2009,23 @@
        "Name: country, dtype: int64"
       ]
      },
-     "execution_count": 20,
+     "execution_count": 19,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "G_country = df['country'].replace(['DE','IT','NL','FR','ES','MX','SE','NZ','DK','IE','CH','NO','AT','BE','HK','SG','N,0\"','LU','JP'], 'Other', inplace=True)\n",
+    "G_county = df['country'].replace(['DE','IT','NL','FR','ES','MX','SE','NZ','DK','IE','CH','NO','AT','BE','HK','SG','N,0\"','LU','JP'], 'Other', inplace=True)\n",
     "df['country'].value_counts()"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
+   "execution_count": null,
    "id": "ff35b7ef-9772-46c4-83ac-92dc16ffadca",
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "1    292627\n",
-       "2     33672\n",
-       "5     29767\n",
-       "3     14756\n",
-       "4      7839\n",
-       "Name: country, dtype: int64"
-      ]
-     },
-     "execution_count": 24,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "G_N_country = df['country'].replace(['US','GB','CA','AU','Other'], [1,2,3,4,5], inplace=True)\n",
-    "df['country'].value_counts()"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
